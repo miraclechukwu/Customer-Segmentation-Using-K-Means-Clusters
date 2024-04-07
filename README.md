@@ -1,6 +1,7 @@
 # **Customer Mall Segmentation Analysis using K-Means Clustering**
 
 **Introduction**
+![]()
 
 In today's fiercely competitive retail landscape, businesses recognize the critical importance of understanding customer behavior and preferences. By segmenting customers into distinct groups based on their demographics and shopping habits, retailers can effectively tailor their marketing strategies, product offerings, and services to better meet the needs and preferences of each segment. The project aims to conduct customer segmentation analysis using K-Means clustering to identify distinct customer groups and derive actionable insights for optimizing the operations of a customer mall.
 
@@ -16,21 +17,30 @@ The primary objective of this project is to segment customers into distinct grou
 
 The project commences with the importation of necessary libraries before loading the dataset from a CSV file into a Pandas DataFrame. Subsequently, preliminary data analysis is conducted to gain insights into the structure and characteristics of the data. This includes univariate analysis to visualize the distributions of key variables such as age, annual income, and spending score, and checking for missing values to ensure data integrity.
 
+![](data_collection_and_analysis.JPG)
+![](shape_infoa_missing_values.JPG)
+
 **Selecting Criteria for Customer Segmentation**
 
 For customer segmentation, the annual income and spending score columns are chosen as criteria, given their significance in reflecting customers' purchasing power and shopping behavior.
 
+
 **Choosing the Number of Clusters**
 
 To determine the optimal number of clusters for segmentation, the Within Clusters Sum Of Squares (WCSS) metric is utilized, and the Elbow Point Graph is plotted. Analysis of the graph aids in identifying the point at which the rate of decrease in WCSS slows down, signifying the optimal number of clusters, which, in this instance, is indicated to be 5.
+![](choosing_wcss.JPG)
+![](plotting_elbow_graph.JPG)
 
 **Training the K-Means Clustering Model**
 
 A K-Means clustering model with 5 clusters is trained using the selected features. The model assigns each data point to one of the clusters based on their proximity to the cluster centroids.
+![](training_kmeans_model.JPG)
 
 **Visualizing all the Clusters**
 
 The clusters and their centroids are visualized on a scatter plot to gain insights into the distribution of customers based on their annual income and spending score. This visualization helps in understanding the characteristics and behaviors of customers within each segment.
+![](cluster_visual_code.JPG)
+![](customer_group.JPG)
 
 **Analytical Insights and Recommendations for the Customer Mall**
 
